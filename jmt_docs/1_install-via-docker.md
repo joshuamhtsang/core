@@ -6,6 +6,8 @@ off Ubuntu 22.04 images:
 https://coreemu.github.io/core/install_docker.html
 https://github.com/joshuamhtsang/core/blob/master/docs/install_docker.md
 
+This is a good option to get CORE running especially if you're actually 
+running Ubuntu 24.04.
 
 Update 09/02/2025:
 
@@ -21,6 +23,12 @@ $ docker ps
 CONTAINER ID   IMAGE     COMMAND         CREATED         STATUS         PORTS     NAMES
 8b60c281cc06   core      "core-daemon"   3 seconds ago   Up 2 seconds             core
 ```
+
+Make sure you follow usual Docker clean up etiquette:
+$ docker stop $(docker ps -a -q)
+$ docker rm $(docker ps -a -q)
+$ docker system prune
+
 
 Next steps:  
 
