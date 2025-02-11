@@ -34,6 +34,13 @@ $ docker rm $(docker ps -a -q)
 $ docker system prune
 ```
 
+# Easy shell scripts to run and stop containers
+
+```
+$ bash 2_run_containers.sh
+$ 3_stop_containers.sh
+```
+
 # Next steps
 
 Next steps:
