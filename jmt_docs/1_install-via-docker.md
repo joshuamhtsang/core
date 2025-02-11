@@ -1,4 +1,4 @@
-# Installing CORE and EMANE using Docker
+# Installing and running CORE and EMANE using Docker
 
 The documentation provides a guide on how to install CORE 
 and EMANE using the Dockerfile's in the CORE repo which builds 
@@ -24,13 +24,19 @@ CONTAINER ID   IMAGE     COMMAND         CREATED         STATUS         PORTS   
 8b60c281cc06   core      "core-daemon"   3 seconds ago   Up 2 seconds             core
 ```
 
+# Cleaning up a docker run session
+
 Make sure you follow usual Docker clean up etiquette:
+
+```
 $ docker stop $(docker ps -a -q)
 $ docker rm $(docker ps -a -q)
 $ docker system prune
+```
 
+# Next steps
 
-Next steps:  
+Next steps:
 
 1. Run python applications with venv in created hosts.  Say, a REST API.
 
